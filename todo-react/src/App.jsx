@@ -11,11 +11,7 @@ import { useEffect, useState } from 'react';
 const oldTasks = localStorage.getItem("tasks")
 // console.log(oldTasks);
 
-
-
 const App = () => {
-
-
 
   const [tasks, setTasks] = useState(JSON.parse(oldTasks) || [])
 
@@ -27,7 +23,6 @@ const App = () => {
     const newTasks = tasks.filter((task, index) => index !== taskIndex)
     setTasks(newTasks)
   }
-  
   // console.log("taska",tasks);
   
 
